@@ -119,6 +119,7 @@ img {
   display: flex;
   align-items: center;
   gap: 3px;
+  width: 100%;
 }
 .bottom-menu .table li a i {
   font-size: 12px;
