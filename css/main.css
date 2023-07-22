@@ -29,6 +29,10 @@ img {
 img {
   width: 100%;
 }
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
 .header {
   max-width: 1365px;
   padding: 5px 50px;
@@ -44,7 +48,7 @@ img {
   justify-content: space-between;
 }
 .inside-hider .external-menu {
-  width: 75%;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   background: #fff;
@@ -311,8 +315,9 @@ img {
   gap: 10px;
   position: absolute;
   top: 600px;
-  left: 50px;
-  margin: 0 0 50px;
+  left: -15px;
+  right: 0;
+  margin: 0 auto;
 }
 .inside-logo {
   width: 33%;
@@ -482,7 +487,7 @@ h2 span {
   overflow: hidden;
   transition: 0.5s;
 }
-.here:hover .content-img img{
+.here:hover .content-img img {
   margin: 5px 0 0;
 }
 
@@ -494,10 +499,10 @@ h2 span {
   border: 1px solid #2fbf71;
   position: relative;
 }
-.here{
+.here {
   width: 300px;
   height: 300px;
-  display: block; 
+  display: block;
   position: relative;
 }
 .content-img::before {
@@ -514,16 +519,17 @@ h2 span {
   opacity: 0;
   transition: 0.2s;
 }
-.here:hover .content-img::before{
+.here:hover .content-img::before {
   opacity: 0.7;
 }
-.page{
+.page {
   display: flex;
   width: 200px;
   position: absolute;
-  top: 200px;
-  left: 0;
- 
+  top: 250px;
+  left: 90px;
+  overflow: hidden;
+  z-index: 99;
 }
 .little-image {
   width: 100px;
@@ -545,7 +551,33 @@ h2 span {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 100px;
+  transition: 0.3s;
+}
+.here:hover .add-image {
+  left: 0;
+  background: var(--green);
 }
 .add-image img {
   width: 80px;
+}
+
+/* Responsible */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .container{
+    max-width: 600px;
+    margin: auto;
+  }
+  .external-menu{
+    max-width: 600px;
+    margin: auto;
+  }
+  .main{
+    max-width: 600px;
+    margin: auto;
+    padding: 10px;
+  }
 }
