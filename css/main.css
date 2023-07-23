@@ -523,7 +523,7 @@ h2 span {
   opacity: 0.7;
 }
 .page {
-  display: flex;
+  /* display: flex; */
   width: 200px;
   position: absolute;
   top: 250px;
